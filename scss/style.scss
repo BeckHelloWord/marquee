@@ -45,4 +45,36 @@ body {
       margin-right: 0;
     }
   }
+  .btn {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 70px;
+    background: rgba(0, 0, 0, .3);
+  }
+  .btn:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border-left: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    transform:translate(-50%,-50%) rotate(45deg);
+  }
+  .btn.btn-left {
+    left: 0;
+    transform: translateY(-50%);
+  }
+  .btn.btn-right {
+    right: 0;
+    transform: translateY(-50%);
+  }
+  .btn.btn-right:before{
+    border:none;
+    border-right:5px solid #fff;
+    border-top:5px solid #fff;
+  }
+
 }
